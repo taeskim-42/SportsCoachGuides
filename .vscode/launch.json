@@ -1,0 +1,44 @@
+{
+  // IntelliSense를 사용하여 가능한 특성에 대해 알아보세요.
+  // 기존 특성에 대한 설명을 보려면 가리킵니다.
+  // 자세한 내용을 보려면 https://go.microsoft.com/fwlink/?linkid=830387을(를) 방문하세요.
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "Oli(dev)",
+      "request": "launch",
+      "type": "dart",
+      "flutterMode": "debug",
+      "args": [
+        "--dart-define",
+        "DEFINEEXAMPLE_APP_NAME=Oli",
+        "--dart-define",
+        "DEFINEEXAMPLE_APP_SUFFIX=.dev",
+        "--dart-define",
+        "IS_DEV=true",
+        "--dart-define",
+        "BACK_END_URL=https://oli.so:8081",
+        "--dart-define",
+        "AUTH_STATE_PREFIX=HaruAuth"
+      ]
+    },
+    {
+      "name": "Oli(live)",
+      "request": "launch",
+      "type": "dart",
+      "flutterMode": "release",
+      "args": [
+        "--dart-define",
+        "DEFINEEXAMPLE_APP_NAME=Oli",
+        "--dart-define",
+        "DEFINEEXAMPLE_APP_SUFFIX=.live",
+        "--dart-define",
+        "IS_DEV=false",
+        "--dart-define",
+        "BACK_END_URL=https://oli.so:8080",
+        "--dart-define",
+        "AUTH_STATE_PREFIX=HaruAuth"
+      ]
+    }
+  ]
+}
