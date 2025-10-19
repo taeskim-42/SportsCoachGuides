@@ -20,7 +20,7 @@ class SplashPage extends GetView<SplashPageController> {
             const AppPicutreAsset(assetType: AppPicutreAssetType.logoText),
             AppSpacing.vXTiny,
             Text(
-              '인공지능 운동 강도 프로그램',
+              '인공지능 운동 강도 프로그램',
               style: AppTextTheme.caption.copyWith(
                 color: AppColorScheme.grayScaleWhite,
               ),

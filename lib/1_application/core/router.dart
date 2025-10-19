@@ -128,12 +128,11 @@ class AppRouter extends IAppRouter {
 
   @override
   void toDiagnosisOffAll() {
-    // TODO: implement toDiagnosisOffAll
+    Get.offAllNamed('/diagnosis');
   }
 
   @override
   Future<T?>? toTermsDetail<T>({required Terms terms}) {
-    // TODO: implement toTermsDetail
-    throw UnimplementedError();
+    return Get.toNamed<T>('/signUp/terms/detail', arguments: terms);
   }
 }

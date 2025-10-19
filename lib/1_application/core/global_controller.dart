@@ -12,6 +12,9 @@ class GlobalController extends GetxController {
   // global values
   final _user = User.empty().obs;
 
+  Rx<User> get userRx => _user;
+  User get currentUser => _user.value;
+
   // isLoading
   final isLoading = false.obs;
 
@@ -27,6 +30,7 @@ class GlobalController extends GetxController {
       (r) {
         _user.value = r;
         _connection.setCallback(401, () => router.toSplashOffAll());
+        router.toDiagnosisOffAll();
       },
     );
   }
