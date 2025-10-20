@@ -43,3 +43,7 @@ app.*.map.json
 /android/app/debug
 /android/app/profile
 /android/app/release
+
+# Firebase service configuration (real credentials should stay local)
+android/app/google-services.json
+ios/Runner/GoogleService-Info.plist
