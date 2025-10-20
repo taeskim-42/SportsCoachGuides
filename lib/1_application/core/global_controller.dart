@@ -23,10 +23,14 @@ class GlobalController extends GetxController {
     }
     final ret = await _userRepo.getCurrent();
     return ret.fold(
-      (l) => router.toSignInOffAll(),
+      (l) {
+        _connection.setCallback(401, () => router.toSplashOffAll());
+        router.toDiagnosisOffAll();
+      },
       (r) {
         _user.value = r;
         _connection.setCallback(401, () => router.toSplashOffAll());
+        router.toDiagnosisOffAll();
       },
     );
   }

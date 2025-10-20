@@ -128,7 +128,7 @@ class AppRouter extends IAppRouter {
 
   @override
   void toDiagnosisOffAll() {
-    // TODO: implement toDiagnosisOffAll
+    Get.offAllNamed('/study');
   }
 
   @override
