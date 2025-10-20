@@ -5,6 +5,7 @@
 ## 1. Firebase 연동 구현
 - [ ] Firestore 컬렉션 구조(`users/{uid}/flashcards/{cardId}`, `questions/{questionId}`)를 실제 DB에 구성하고 초기 데이터 시드
   - [x] `firebase.json`, `.firebaserc`, `firestore.rules`, `firestore.indexes.json`, `storage.rules` 및 에뮬레이터 포트 스캐폴딩 추가 (2025-10-13)
+  - [x] Flutter 클라이언트 의존성(`firebase_core`, `firebase_auth`, `cloud_firestore`) 추가 및 `Firebase.initializeApp` 호출 복구 (2025-10-14)
   - [ ] 실제 Firebase 프로젝트 ID 연결 (`sportscoachguide-73aea`) 및 플랫폼 등록 (FlutterFire CLI) *(재실행 필요)*
   - [ ] 초기 데이터 시드 및 환경 분리 구성
     - 참고: `tools/firestore-seed` 디렉터리에 에뮬레이터/프로덕션 공용 시드 스크립트 추가 (2025-10-13)
